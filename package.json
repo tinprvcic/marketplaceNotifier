@@ -1,0 +1,23 @@
+{
+  "name": "apartmentscraping",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "jsdom": "^16.6.0",
+    "node-fetch": "^2.6.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^16.2.11",
+    "@types/node-fetch": "^2.5.10",
+    "@types/request": "^2.48.5",
+    "typescript": "^4.3.4"
+  },
+  "scripts": {
+    "start": "node dist/app.js",
+    "build": "npx tsc"
+  },
+  "author": "Tin Prvcic",
+  "license": "ISC"
+}
