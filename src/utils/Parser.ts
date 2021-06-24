@@ -46,7 +46,9 @@ export default class Parser {
     let parsedArticles: ParsedArticle[] = [];
     const { document } = new JSDOM(root).window;
 
-    const articles = document.querySelectorAll('.EntityList-item--Regular');
+    const articles = document.querySelectorAll(
+      '.EntityList--Regular .EntityList-item--Regular, .EntityList--Regular .EntityList-item--VauVau'
+    );
     console.log(articles.length);
 
     articles.forEach((a) => {
@@ -67,9 +69,9 @@ export default class Parser {
     let parsedArticles: ParsedArticle[] = [];
     const { document } = new JSDOM(root).window;
 
-    const articles = document
-      .querySelector('.oglasnik-box')!
-      .querySelectorAll('a.classified-box');
+    const articles = document.querySelectorAll(
+      '.oglasnik-box a.classified-box, .izdvojeno-premium-box a.classified-box'
+    );
     console.log(articles.length);
 
     articles.forEach((a) => {
