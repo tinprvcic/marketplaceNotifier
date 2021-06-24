@@ -9,7 +9,7 @@ export default class Store {
 
     //create file if not exists
     try {
-      fs.writeFileSync(path, '', { flag: 'wx' });
+      fs.writeFileSync(path, '[]', { flag: 'wx' });
     } catch {}
   }
 
