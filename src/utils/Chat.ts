@@ -1,8 +1,8 @@
 import fetch from 'node-fetch';
 
 export default class Chat {
-  API_KEY: string;
-  chat_id: string;
+  private API_KEY: string;
+  private chat_id: string;
 
   /**
    * Send messages to a specific chat
