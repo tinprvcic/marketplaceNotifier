@@ -1,0 +1,12 @@
+[Unit]
+Description=A timer that fetches new info every 30 seconds
+
+[Timer]
+Unit=marketplace-notifier.service
+AccuracySec=1s
+OnUnitActiveSec=30
+Persistent=true
+
+[Install]
+WantedBy=timers.target
+

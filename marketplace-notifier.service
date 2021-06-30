@@ -1,0 +1,11 @@
+[Unit]
+Description=A job to fetch the new data from marketplaces
+
+[Service]
+Type=simple
+User=[your username]
+WorkingDirectory=[location of app folder on your server]
+ExecStart=/usr/bin/node ./dist/app.js
+
+[Install]
+WantedBy=multi-user.target
